@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.main-nav {
+  width: 85%;
+}
+
+.main-content img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+header {
+  text-align: center;
+  height: 50%;
+}
+
+/*#191919 #34495e #eb3b5a */
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.name {
+  float: left;
+  padding: 15px 0;
+  font-size: 1.875em;
+  padding-left: 30px;
+  color: #191919;
+  font-family: "Anton";
+}
+
+.nav {
+  float: right;
+}
+
+.centered {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  color: #191919;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Staatliches";
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #191919;
+  font-family: "Staatliches";
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.nav a::before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 100%;
+  background-color: #191919;
+  position: absolute;
+  font-family: "Staatliches";
+  font-size: 1.25em;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.nav a:hover::before {
+  width: 100%;
+  font-size: "Staatliches";
+}
+
+body {
+  background: url("../img/MainWP.jpg") no-repeat fixed center;
+  padding: 0;
+  margin: 0;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  color: #fff;
+  font-size: 4.375em;
+  font-family: "Staatliches";
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.hidden {
+  max-width: 0;
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+.text:hover .hidden {
+  opacity: 1;
+  max-width: 1em;
+}
